@@ -9,10 +9,10 @@ client.on('ready', () => {
 
 client.on('message', async msg => {
     if(!msg.author.bot) {
-        if((msg.cleanContent.startsWith("@" + client.user.username) || message.channel.type == 'dm')){
+        if((msg.cleanContent.startsWith("@" + client.user.username) || msg.channel.type == 'dm')){
             let message = msg.cleanContent.replace(`@${client.user.username} `, '').replace(`@${client.user.username}`, '')
             let sessionId = msg.author.id;
-            cortex(message, sessionId)
+            await cortex(message, sessionId)
             .then(result => msg.channel.send(result))
             .catch(e => msg.channel.send(e))
         }
