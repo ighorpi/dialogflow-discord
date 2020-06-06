@@ -4,7 +4,7 @@ module.exports.cortex = async (message, sessionId) => {
     return new Promise(async (resolve, reject) => {
         try {
             const sessionClient = new dialogflow.SessionsClient({credentials: serviceAccount});
-            const sessionPath = sessionClient.projectAgentSessionPath('alabassistent', sessionId);
+            const sessionPath = sessionClient.projectAgentSessionPath(serviceAccount.project_id, sessionId);
           
             const request = {
               session: sessionPath,
