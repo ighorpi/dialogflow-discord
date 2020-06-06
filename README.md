@@ -1,8 +1,8 @@
 
 # dialogflow-discord
-Dialogflow and discord integration
-
-Clear example of a implementarion of discord bot using [Discord.js](https://discord.js.org/) and [Dialogflow](https://dialogflow.com/)
+---
+_**An implementation discord bot using [Discord.js](https://discord.js.org/) and [Dialogflow](https://dialogflow.com/).
+This project was use to bring the NPL features from dialogflow api to discord servers.**_
 
 ## Quickstart
 
@@ -19,7 +19,7 @@ Clear example of a implementarion of discord bot using [Discord.js](https://disc
 
 The project requires [Node.js](https://nodejs.org/) v4+ to run.
 
-Install the dependencies and start the server.
+Install the dependencies and start the app.
 
 ```sh
 $ cd dialogflow-discord
@@ -29,7 +29,7 @@ $ node .
 
 
 
-### References:
+##### Repo References:
 
 * [discord.js](https://github.com/discordjs/discord.js/)
 * [nodejs-dialogflow](https://github.com/googleapis/nodejs-dialogflow) 
